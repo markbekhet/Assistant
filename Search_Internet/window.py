@@ -25,8 +25,8 @@ def main():
     wndClassAtom = None
     try:
         wndClassAtom = win32gui.RegisterClass(wndClass)
-    except Exception, e:
-        print e
+    except Exception e :
+        print(e) 
         raise e
 
     hWindow = win32gui.CreateWindow(
@@ -68,7 +68,7 @@ def wndProc(hWnd, message, wParam, lParam):
         return 0
 
     elif message == win32con.WM_DESTROY:
-        print 'Being destroyed'
+        print ('Being destroyed')
         win32gui.PostQuitMessage(0)
         return 0
 

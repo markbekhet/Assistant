@@ -36,6 +36,6 @@ def input_audio(question):
   
 # I have to test the capacity of the langyage to convert a number
 # This one will be tested tomorrow because i need Internet 
-#number = "How many links do you want to save ?"
-#number_ = input_audio(number)
+number = "How many links do you want to save ?"
+number_ = input_audio(number)
 
